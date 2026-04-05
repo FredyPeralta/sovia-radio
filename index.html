@@ -1,32 +1,62 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <title>Sovia Radio</title>
+<meta charset="UTF-8">
+<title>Sovia Radio</title>
 
-  <style>
-    body {
-      margin: 0;
-      background: black;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-    }
+<style>
+body {
+    margin: 0;
+    height: 100vh;
+    background: radial-gradient(circle at center, #0f172a, #020617);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    color: white;
+}
 
-    iframe {
-      width: 400px;
-      height: 300px;
-      border: none;
-      border-radius: 20px;
-      box-shadow: 0 0 25px #00ffff;
-    }
-  </style>
+.player {
+    background: rgba(255,255,255,0.05);
+    padding: 40px;
+    border-radius: 25px;
+    text-align: center;
+    box-shadow: 0 0 60px rgba(0,150,255,0.5);
+    backdrop-filter: blur(20px);
+}
+
+h1 {
+    margin-bottom: 20px;
+    font-size: 26px;
+    letter-spacing: 2px;
+}
+
+audio {
+    width: 280px;
+    margin-top: 10px;
+}
+
+p {
+    margin-top: 15px;
+    font-size: 13px;
+    opacity: 0.7;
+}
+</style>
+
 </head>
 
 <body>
 
-  <iframe src="http://187.124.229.247/public/sovia_radio"></iframe>
+<div class="player">
+    <h1>🔥 SOVIA RADIO 🔥</h1>
+
+    <audio controls autoplay>
+        <source src="http://187.124.229.247/listen/sovia_radio/radio.mp3" type="audio/mpeg">
+        Tu navegador no soporta audio.
+    </audio>
+
+    <p>Feel the ignition 🚀</p>
+</div>
 
 </body>
 </html>
