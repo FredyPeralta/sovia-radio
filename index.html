@@ -1,18 +1,55 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
-    <title>Sovia Radio</title>
-    <meta charset="UTF-8">
+  <meta charset="UTF-8">
+  <title>Sovia Radio</title>
+
+  <style>
+    body {
+      margin: 0;
+      background: black;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      font-family: Arial, sans-serif;
+      color: white;
+      text-align: center;
+    }
+
+    .player {
+      background: #111;
+      padding: 30px;
+      border-radius: 20px;
+      box-shadow: 0 0 25px #00ffff;
+    }
+
+    h1 {
+      margin-bottom: 20px;
+      font-size: 22px;
+      letter-spacing: 2px;
+    }
+
+    audio {
+      width: 300px;
+    }
+  </style>
 </head>
 
-<body style="margin:0; background:black; display:flex; justify-content:center; align-items:center; height:100vh;">
+<body>
 
-    <iframe 
-        src="http://187.124.229.247/public/sovia_radio"
-        width="400"
-        height="300"
-        style="border-radius:20px; border:none; box-shadow:0 0 20px #00ffff;">
-    </iframe>
+  <div class="player">
+    <h1>🔥 SOVIA RADIO 🔥</h1>
+
+    <audio controls>
+      <source src="http://187.124.229.247:8000/radio.mp3" type="audio/mpeg">
+      Tu navegador no soporta audio.
+    </audio>
+
+    <p style="margin-top:15px; font-size:12px; color:#aaa;">
+      Feel the ignition 🚀
+    </p>
+  </div>
 
 </body>
 </html>
