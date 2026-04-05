@@ -1,17 +1,1 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Sovia Radio</title>
-    <meta charset="UTF-8">
-</head>
 
-<body style="margin:0; background:black; text-align:center;">
-
-    <iframe src="http://187.124.229.247/public/sovia_radio"
-            width="100%" 
-            height="600px" 
-            frameborder="0">
-    </iframe>
-
-</body>
-</html>
